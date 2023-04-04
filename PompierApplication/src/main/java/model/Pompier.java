@@ -4,6 +4,8 @@
  */
 package model;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author eliot.villain
@@ -88,5 +90,12 @@ public class Pompier {
     public void setSexe_pompier(String sexe_pompier) {
         this.sexe_pompier = sexe_pompier;
     }
-    
+
+    public Caserne getUneCaserne() {
+        return uneCaserne;
+    }
+
+    public void setUneCaserne(Caserne uneCaserne) {
+        this.uneCaserne = uneCaserne;
+    }
 }
