@@ -18,6 +18,8 @@ public class Pompier {
     private String tel_pompier;
     private String sexe_pompier;
     
+    private Caserne uneCaserne;
+    
     public Pompier(){
     }
 
