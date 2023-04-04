@@ -4,6 +4,8 @@
  */
 package model;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author eliot.villain
@@ -15,7 +17,9 @@ public class Caserne {
     private String rue_caserne;
     private String ville_caserne;
     private String codePostal_caserne;
-
+    
+    private ArrayList<Pompier> lesPompiers;
+    
     public Caserne(int id_caserne, String nom_caserne, String rue_caserne, String ville_caserne, String codePostal_caserne) {
         this.id_caserne = id_caserne;
         this.nom_caserne = nom_caserne;
@@ -62,6 +66,21 @@ public class Caserne {
 
     public void setCodePostal_caserne(String codePostal_caserne) {
         this.codePostal_caserne = codePostal_caserne;
+    }
+
+    public ArrayList<Pompier> getLesPompiers() {
+        return lesPompiers;
+    }
+
+    public void setLesPompiers(ArrayList<Pompier> lesPompiers) {
+        this.lesPompiers = lesPompiers;
+    }
+    
+    public void addUnPompier(Pompier pUnPompier){
+        if(lesPompiers == null){
+            lesPompiers = new ArrayList<Pompier>();
+        }
+        lesPompiers.add(pUnPompier);
     }
     
     
