@@ -47,7 +47,7 @@ public class compteDAO {
                 Caserne uneCaserne = new Caserne();
                 uneCaserne.setId_caserne(result.getInt("Id_caserne"));
                 
-                //unPompier.setUneCaserne(uneCaserne);
+                unPompier.setUneCaserne(uneCaserne);
                 ConnexionBdd.fermerConnexion(result);
                 ConnexionBdd.fermerConnexion(requete);
                 return unPompier;
