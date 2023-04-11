@@ -22,6 +22,7 @@ public class Pompier {
     private Caserne uneCaserne;
     
     public Pompier(){
+        
     }
 
     public Pompier(int id_Pompier, String nom_pompier, String prenom_pompier, String dateNaissance_pompier, String numeroBip_pompier, String mdp_pompier, String tel_pompier, String sexe_pompier) {

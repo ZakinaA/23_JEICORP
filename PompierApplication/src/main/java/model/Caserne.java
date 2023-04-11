@@ -15,6 +15,10 @@ public class Caserne {
     private String rue_caserne;
     private String ville_caserne;
     private String codePostal_caserne;
+    
+    public Caserne(){
+        
+    }
 
     public Caserne(int id_caserne, String nom_caserne, String rue_caserne, String ville_caserne, String codePostal_caserne) {
         this.id_caserne = id_caserne;
