@@ -17,6 +17,7 @@ public class Pompier {
     private String prenom_pompier;
     private String dateNaissance_pompier;
     private String numeroBip_pompier;
+    private String mdp_pompier;
     private String tel_pompier;
     private String sexe_pompier;
     
@@ -24,14 +25,16 @@ public class Pompier {
     private ArrayList<Intervenir> uneIntervention;
     
     public Pompier(){
+        
     }
 
-    public Pompier(int id_Pompier, String nom_pompier, String prenom_pompier, String dateNaissance_pompier, String numeroBip_pompier, String tel_pompier, String sexe_pompier) {
+    public Pompier(int id_Pompier, String nom_pompier, String prenom_pompier, String dateNaissance_pompier, String numeroBip_pompier, String mdp_pompier, String tel_pompier, String sexe_pompier) {
         this.id_Pompier = id_Pompier;
         this.nom_pompier = nom_pompier;
         this.prenom_pompier = prenom_pompier;
         this.dateNaissance_pompier = dateNaissance_pompier;
         this.numeroBip_pompier = numeroBip_pompier;
+        this.mdp_pompier = mdp_pompier;
         this.tel_pompier = tel_pompier;
         this.sexe_pompier = sexe_pompier;
     }
@@ -76,6 +79,14 @@ public class Pompier {
         this.numeroBip_pompier = numeroBip_pompier;
     }
 
+    public String getMdp_pompier() {
+        return mdp_pompier;
+    }
+
+    public void setMdp_pompier(String mdp_pompier) {
+        this.mdp_pompier = mdp_pompier;
+    }
+    
     public String getTel_pompier() {
         return tel_pompier;
     }
