@@ -21,6 +21,7 @@ public class Pompier {
     private String sexe_pompier;
     
     private Caserne uneCaserne;
+    private ArrayList<Intervenir> uneIntervention;
     
     public Pompier(){
     }
@@ -98,4 +99,12 @@ public class Pompier {
     public void setUneCaserne(Caserne uneCaserne) {
         this.uneCaserne = uneCaserne;
     }
+
+    public ArrayList<Intervenir> getUneIntervention() {
+        return uneIntervention;
+    }
+
+    public void setUneIntervention(ArrayList<Intervenir> uneIntervention) {
+        this.uneIntervention = uneIntervention;
+    } 
 }
