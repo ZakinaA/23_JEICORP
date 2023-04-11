@@ -4,6 +4,8 @@
  */
 package model;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author eliot.villain
@@ -20,6 +22,7 @@ public class Pompier {
     private String sexe_pompier;
     
     private Caserne uneCaserne;
+    private ArrayList<Intervenir> uneIntervention;
     
     public Pompier(){
         
@@ -99,5 +102,20 @@ public class Pompier {
     public void setSexe_pompier(String sexe_pompier) {
         this.sexe_pompier = sexe_pompier;
     }
-    
+
+    public Caserne getUneCaserne() {
+        return uneCaserne;
+    }
+
+    public void setUneCaserne(Caserne uneCaserne) {
+        this.uneCaserne = uneCaserne;
+    }
+
+    public ArrayList<Intervenir> getUneIntervention() {
+        return uneIntervention;
+    }
+
+    public void setUneIntervention(ArrayList<Intervenir> uneIntervention) {
+        this.uneIntervention = uneIntervention;
+    } 
 }
