@@ -26,7 +26,7 @@ public class compteDAO {
         
         try{
             //preparation de la requête
-            requete = connection.prepareStatement("SELECT * FROM pompier WHERE numeorBip_pompier = ? AND mdp_pompier = ?");
+            requete = connection.prepareStatement("SELECT * FROM pompier WHERE numeroBip_pompier = ? AND mdp_pompier = ?");
             requete.setString(1, login);
             requete.setString(2, mdp);
             
