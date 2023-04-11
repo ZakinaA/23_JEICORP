@@ -20,6 +20,10 @@ public class Caserne {
     
     private ArrayList<Pompier> lesPompiers;
     
+    public Caserne(){
+        
+    }
+    
     public Caserne(int id_caserne, String nom_caserne, String rue_caserne, String ville_caserne, String codePostal_caserne) {
         this.id_caserne = id_caserne;
         this.nom_caserne = nom_caserne;
