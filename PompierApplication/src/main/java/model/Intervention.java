@@ -4,6 +4,8 @@
  */
 package model;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author eliot.villain
@@ -16,6 +18,8 @@ public class Intervention {
     private String heurAppel_intervention;
     private String duree_intervention;
     private String heureArrive_intervention;
+    
+    private ArrayList<Intervenir> uneInterventtion;
     
     public Intervention(){
     }
@@ -75,5 +79,13 @@ public class Intervention {
 
     public void setHeureArrive_intervention(String heureArrive_intervention) {
         this.heureArrive_intervention = heureArrive_intervention;
+    }
+
+    public ArrayList<Intervenir> getUneInterventtion() {
+        return uneInterventtion;
+    }
+
+    public void setUneInterventtion(ArrayList<Intervenir> uneInterventtion) {
+        this.uneInterventtion = uneInterventtion;
     }
 }
