@@ -16,7 +16,11 @@ public class accueil extends javax.swing.JFrame {
     public accueil() {
         initComponents();
     }
-
+ private void jButton1MouseClicked(java.awt.event.MouseEvent evt) {  
+     
+     
+        // TODO add your handling code here:
+    }         
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
