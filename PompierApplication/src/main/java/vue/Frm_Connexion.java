@@ -123,7 +123,7 @@ public class Frm_Connexion extends javax.swing.JFrame {
         JFrame leMenu = new JFrame("erreur de connexion");
         if(lePompier != null){
             int Id = lePompier.getId_Pompier();
-            if(Id >= 0){
+            if(Id > 0){
                 Pompier pompier = compteDAO.getPompier(cnx, lePompier.getNom_pompier(), lePompier.getPrenom_pompier());
                 leMenu = new Frm_Acceuil();
             }
