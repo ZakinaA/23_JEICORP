@@ -80,7 +80,7 @@
               <Group type="103" groupAlignment="1" attributes="0">
                   <Group type="102" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="jScrollPane1" pref="701" max="32767" attributes="0"/>
+                      <Component id="jScrollPane1" pref="821" max="32767" attributes="0"/>
                   </Group>
                   <Group type="102" attributes="0">
                       <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
@@ -97,7 +97,7 @@
               <EmptySpace max="-2" attributes="0"/>
               <Component id="jButton2" min="-2" max="-2" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
-              <Component id="jScrollPane1" pref="199" max="32767" attributes="0"/>
+              <Component id="jScrollPane1" pref="254" max="32767" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
           </Group>
       </Group>
@@ -114,25 +114,19 @@
         <Component class="javax.swing.JTable" name="jTable1">
           <Properties>
             <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
-              <Table columnCount="9" rowCount="50">
+              <Table columnCount="8" rowCount="10">
                 <Column editable="true" title="Id" type="java.lang.Object"/>
                 <Column editable="true" title="Lieu" type="java.lang.Object"/>
                 <Column editable="true" title="Date" type="java.lang.Object"/>
                 <Column editable="true" title="Heure appelle" type="java.lang.Object"/>
                 <Column editable="true" title="Heure arriv&#xe9;e" type="java.lang.Object"/>
                 <Column editable="true" title="Heure intervention" type="java.lang.Object"/>
-                <Column editable="true" title="Pompier" type="java.lang.Object"/>
                 <Column editable="true" title="Engin sur place" type="java.lang.Object"/>
                 <Column editable="true" title="Situation " type="java.lang.Object"/>
               </Table>
             </Property>
             <Property name="columnModel" type="javax.swing.table.TableColumnModel" editor="org.netbeans.modules.form.editors2.TableColumnModelEditor">
               <TableColumnModel selectionModel="0">
-                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
-                  <Title/>
-                  <Editor/>
-                  <Renderer/>
-                </Column>
                 <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
                   <Title/>
                   <Editor/>
