@@ -19,6 +19,7 @@ public class Caserne {
     private String codePostal_caserne;
     
     private ArrayList<Pompier> lesPompiers;
+    private ArrayList<Engin> Engin_Cas;
     
     public Caserne(){
         
@@ -85,5 +86,13 @@ public class Caserne {
             lesPompiers = new ArrayList<Pompier>();
         }
         lesPompiers.add(pUnPompier);
+    }
+
+    public ArrayList<Engin> getEngin_Cas() {
+        return Engin_Cas;
+    }
+
+    public void setEngin_Cas(ArrayList<Engin> Engin_Cas) {
+        this.Engin_Cas = Engin_Cas;
     }
 }
