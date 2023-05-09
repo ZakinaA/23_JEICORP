@@ -120,12 +120,27 @@ public class Frm_Connexion extends javax.swing.JFrame {
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         Pompier lePompier = controleConnexion();
         
+        String pompierRole = lePompier.getRole_pompier();
+        
         JFrame leMenu = new JFrame("erreur de connexion");
+        
         if(lePompier != null){
+            
             int Id = lePompier.getId_Pompier();
+            
             if(Id > 0){
-                Pompier pompier = compteDAO.getPompier(cnx, lePompier.getNom_pompier(), lePompier.getPrenom_pompier());
-                leMenu = new Frm_Acceuil(lePompier);
+                
+                if(pompierRole.equals("A")){
+                    Pompier pompier = compteDAO.getPompier(cnx, lePompier.getNom_pompier(), lePompier.getPrenom_pompier());
+                    leMenu = new Frm_AcceuilAdministrateur(lePompier);
+                } else if(pompierRole.equals("R")){
+                    Pompier pompier = compteDAO.getPompier(cnx, lePompier.getNom_pompier(), lePompier.getPrenom_pompier());
+                    leMenu = new Frm_AcceuilChefPompier(lePompier);
+                } else if(pompierRole.equals("P")){
+                    Pompier pompier = compteDAO.getPompier(cnx, lePompier.getNom_pompier(), lePompier.getPrenom_pompier());
+                    leMenu = new Frm_Acceuil(lePompier);
+                }
+                
             }
             leMenu.setVisible(true);
             dispose();

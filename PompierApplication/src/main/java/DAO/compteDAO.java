@@ -6,6 +6,7 @@ package DAO;
 
 import bddCnx.ConnexionBdd;
 import java.sql.Connection;
+import java.sql.ConnectionBuilder;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -27,11 +28,12 @@ public class compteDAO {
         try{
             //preparation de la requête
             requete = connection.prepareStatement("SELECT * FROM pompier WHERE numeroBip_pompier = ? AND mdp_pompier = ?");
+            
             requete.setString(1, login);
             requete.setString(2, mdp);
             
             result = requete.executeQuery();
-            
+            System.out.println("requete=" + requete + connection.getClientInfo() + "  " + connection.getMetaData().toString() + "  " + connection.getSchema());
             Pompier unPompier = new Pompier();
             
             if(result.next()){
@@ -43,6 +45,7 @@ public class compteDAO {
                 unPompier.setMdp_pompier(result.getString("mdp_pompier"));
                 unPompier.setTel_pompier(result.getString("tel_pompier"));
                 unPompier.setSexe_pompier(result.getString("sexe_pompier"));
+                unPompier.setRole_pompier(result.getString("role_pompier"));
                 
                 Caserne uneCaserne = new Caserne();
                 uneCaserne.setId_caserne(result.getInt("Id_caserne"));
@@ -58,5 +61,5 @@ public class compteDAO {
             e.printStackTrace();
             return null;
         }
-    }
+    }  
 }

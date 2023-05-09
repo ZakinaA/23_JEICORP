@@ -11,18 +11,18 @@ import model.Pompier;
  *
  * @author ilias.blaquiere
  */
-public class Frm_Acceuil extends javax.swing.JFrame {
+public class Frm_AcceuilChefPompier extends javax.swing.JFrame {
 
     /**
      * Creates new form connexion
      */
-    public Frm_Acceuil() {
+    public Frm_AcceuilChefPompier() {
         initComponents();
     }
 
-    public Frm_Acceuil(Pompier unPompier) {
+    public Frm_AcceuilChefPompier(Pompier unPompier) {
         initComponents();
-        jLabel1.setText("Bienvenue " + unPompier.getNom_pompier());
+        jLabel1.setText("Bienvenue chef " + unPompier.getNom_pompier());
     }
     /**
      * This method is called from within the constructor to initialize the form.
@@ -51,7 +51,7 @@ public class Frm_Acceuil extends javax.swing.JFrame {
             }
         });
 
-        jLabel1.setText("Bienvenue *nom du pompier*");
+        jLabel1.setText("Bienvenue chef *nom du pompier*");
 
         jMenuBar1.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
@@ -116,13 +116,13 @@ public class Frm_Acceuil extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(Frm_Acceuil.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Frm_AcceuilChefPompier.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(Frm_Acceuil.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Frm_AcceuilChefPompier.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(Frm_Acceuil.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Frm_AcceuilChefPompier.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(Frm_Acceuil.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Frm_AcceuilChefPompier.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
         //</editor-fold>
@@ -136,7 +136,7 @@ public class Frm_Acceuil extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new Frm_Acceuil().setVisible(true);
+                new Frm_AcceuilChefPompier().setVisible(true);
             }
         });
     }
