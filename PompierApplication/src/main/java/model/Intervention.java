@@ -20,6 +20,8 @@ public class Intervention {
     private String heureArrive_intervention;
     
     private ArrayList<Intervenir> uneInterventtion;
+    private Situation uneSituation;
+    private ArrayList<Engin> Engin_Inter;
     
     public Intervention(){
     }
@@ -87,5 +89,21 @@ public class Intervention {
 
     public void setUneInterventtion(ArrayList<Intervenir> uneInterventtion) {
         this.uneInterventtion = uneInterventtion;
+    }
+
+    public Situation getUneSituation() {
+        return uneSituation;
+    }
+
+    public void setUneSituation(Situation uneSituation) {
+        this.uneSituation = uneSituation;
+    }
+
+    public ArrayList<Engin> getEngin_Inter() {
+        return Engin_Inter;
+    }
+
+    public void setEngin_Inter(ArrayList<Engin> Engin_Inter) {
+        this.Engin_Inter = Engin_Inter;
     }
 }
