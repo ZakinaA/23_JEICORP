@@ -18,7 +18,7 @@ import model.Pompier;
 public class Frm_Connexion extends javax.swing.JFrame {
     
     Connection cnx;
-
+    //Pompier unPompier ;
     /**
      * Creates new form connexion
      */
@@ -31,7 +31,9 @@ public class Frm_Connexion extends javax.swing.JFrame {
     private Pompier controleConnexion(){
         String loginSaisi = jtxt_login.getText();
         String mdpSaisi = String.valueOf(jtxt_mdp.getPassword());
+         System.out.println("frm connexion mdp" + mdpSaisi);
         Pompier unPompier = compteDAO.getPompier(cnx, loginSaisi, mdpSaisi);
+        System.out.println("frm connexion ctrl connex" + unPompier.getNom_pompier());
         return unPompier;
     }
     /**
@@ -117,7 +119,8 @@ public class Frm_Connexion extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        Pompier lePompier = controleConnexion();
+       Pompier lePompier = controleConnexion();
+       System.out.println("frm connexion" + lePompier.getNom_pompier());
         
         String pompierRole = lePompier.getRole_pompier();
         

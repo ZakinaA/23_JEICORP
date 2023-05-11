@@ -72,41 +72,104 @@
   <Layout>
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Group type="102" alignment="0" attributes="0">
-              <EmptySpace pref="241" max="32767" attributes="0"/>
-              <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
-              <EmptySpace pref="242" max="32767" attributes="0"/>
-          </Group>
-          <Group type="102" alignment="1" attributes="0">
-              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-              <Component id="jButton1" min="-2" max="-2" attributes="0"/>
+          <Group type="102" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="jLabelNomPompier" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="jLabelPrenomPompier" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="jLabelDateNaissance" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="jLabelNumeroBipPompier" alignment="0" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="172" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="jLabelCasernePompier" min="-2" max="-2" attributes="0"/>
+                          <Component id="jLabelSexePompier" min="-2" max="-2" attributes="0"/>
+                          <Component id="jLabelTelPompier" min="-2" max="-2" attributes="0"/>
+                          <Component id="jLabelRolePompier" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                  <Component id="jLabelProfilPompier" alignment="0" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="0" pref="26" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Group type="102" alignment="1" attributes="0">
-              <Component id="jButton1" min="-2" max="-2" attributes="0"/>
-              <EmptySpace min="-2" pref="108" max="-2" attributes="0"/>
-              <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
-              <EmptySpace pref="196" max="32767" attributes="0"/>
+          <Group type="102" attributes="0">
+              <Component id="jLabelProfilPompier" min="-2" max="-2" attributes="0"/>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="jLabelNomPompier" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jLabelTelPompier" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="jLabelPrenomPompier" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jLabelSexePompier" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="jLabelDateNaissance" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jLabelRolePompier" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="jLabelNumeroBipPompier" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jLabelCasernePompier" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace pref="106" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
   </Layout>
   <SubComponents>
-    <Component class="javax.swing.JLabel" name="jLabel1">
+    <Component class="javax.swing.JLabel" name="jLabelProfilPompier">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Bienvenue *nom du pompier*"/>
+        <Property name="text" type="java.lang.String" value="Profil de : *nom du pompier*"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton1">
+    <Component class="javax.swing.JLabel" name="jLabelNomPompier">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Profil"/>
+        <Property name="text" type="java.lang.String" value="jLabelNomPompier"/>
       </Properties>
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton1ActionPerformed"/>
-      </Events>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabelPrenomPompier">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="jLabelPrenomPompier"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabelDateNaissance">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="jLabelDateNaissance"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabelNumeroBipPompier">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="jLabelNumeroBipPompier"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabelTelPompier">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="jLabelTelPompier"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabelSexePompier">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="jLabelSexePompier"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabelRolePompier">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="jLabelRolePompier"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabelCasernePompier">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="jLabelCasernePompier"/>
+      </Properties>
     </Component>
   </SubComponents>
 </Form>

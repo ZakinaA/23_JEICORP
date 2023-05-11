@@ -22,7 +22,18 @@ public class Frm_Acceuil extends javax.swing.JFrame {
 
     public Frm_Acceuil(Pompier unPompier) {
         initComponents();
-        jLabel1.setText("Bienvenue " + unPompier.getNom_pompier());
+        jLabelProfilPompier.setText("Profil de " + unPompier.getNom_pompier());
+        jLabelNomPompier.setText("Nom : " + unPompier.getNom_pompier());
+        jLabelPrenomPompier.setText("Prenom : " + unPompier.getPrenom_pompier());
+        jLabelDateNaissance.setText("Date de naissance : " + unPompier.getDateNaissance_pompier());
+        jLabelNumeroBipPompier.setText("numero Bip : " + unPompier.getNumeroBip_pompier());
+        jLabelTelPompier.setText("Tel : " + unPompier.getTel_pompier());
+        jLabelSexePompier.setText("Sexe : " + unPompier.getSexe_pompier());
+        jLabelRolePompier.setText("Role : " + unPompier.getRole_pompier());
+        jLabelCasernePompier.setText("Caserne : " + unPompier.getUneCaserne().getNom_caserne());
+        
+        
+        
     }
     /**
      * This method is called from within the constructor to initialize the form.
@@ -33,8 +44,15 @@ public class Frm_Acceuil extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel1 = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
+        jLabelProfilPompier = new javax.swing.JLabel();
+        jLabelNomPompier = new javax.swing.JLabel();
+        jLabelPrenomPompier = new javax.swing.JLabel();
+        jLabelDateNaissance = new javax.swing.JLabel();
+        jLabelNumeroBipPompier = new javax.swing.JLabel();
+        jLabelTelPompier = new javax.swing.JLabel();
+        jLabelSexePompier = new javax.swing.JLabel();
+        jLabelRolePompier = new javax.swing.JLabel();
+        jLabelCasernePompier = new javax.swing.JLabel();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
         jMenu2 = new javax.swing.JMenu();
@@ -43,14 +61,23 @@ public class Frm_Acceuil extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(255, 255, 255));
 
-        jLabel1.setText("Bienvenue *nom du pompier*");
+        jLabelProfilPompier.setText("Profil de : *nom du pompier*");
 
-        jButton1.setText("Profil");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
-            }
-        });
+        jLabelNomPompier.setText("jLabelNomPompier");
+
+        jLabelPrenomPompier.setText("jLabelPrenomPompier");
+
+        jLabelDateNaissance.setText("jLabelDateNaissance");
+
+        jLabelNumeroBipPompier.setText("jLabelNumeroBipPompier");
+
+        jLabelTelPompier.setText("jLabelTelPompier");
+
+        jLabelSexePompier.setText("jLabelSexePompier");
+
+        jLabelRolePompier.setText("jLabelRolePompier");
+
+        jLabelCasernePompier.setText("jLabelCasernePompier");
 
         jMenuBar1.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
@@ -75,28 +102,48 @@ public class Frm_Acceuil extends javax.swing.JFrame {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap(241, Short.MAX_VALUE)
-                .addComponent(jLabel1)
-                .addContainerGap(242, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(jButton1))
+                .addContainerGap()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabelNomPompier)
+                            .addComponent(jLabelPrenomPompier)
+                            .addComponent(jLabelDateNaissance)
+                            .addComponent(jLabelNumeroBipPompier))
+                        .addGap(172, 172, 172)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabelCasernePompier)
+                            .addComponent(jLabelSexePompier)
+                            .addComponent(jLabelTelPompier)
+                            .addComponent(jLabelRolePompier)))
+                    .addComponent(jLabelProfilPompier))
+                .addGap(0, 26, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addComponent(jButton1)
-                .addGap(108, 108, 108)
-                .addComponent(jLabel1)
-                .addContainerGap(196, Short.MAX_VALUE))
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(jLabelProfilPompier)
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabelNomPompier)
+                    .addComponent(jLabelTelPompier))
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabelPrenomPompier)
+                    .addComponent(jLabelSexePompier))
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabelDateNaissance)
+                    .addComponent(jLabelRolePompier))
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabelNumeroBipPompier)
+                    .addComponent(jLabelCasernePompier))
+                .addContainerGap(106, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -141,8 +188,15 @@ public class Frm_Acceuil extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabelCasernePompier;
+    private javax.swing.JLabel jLabelDateNaissance;
+    private javax.swing.JLabel jLabelNomPompier;
+    private javax.swing.JLabel jLabelNumeroBipPompier;
+    private javax.swing.JLabel jLabelPrenomPompier;
+    private javax.swing.JLabel jLabelProfilPompier;
+    private javax.swing.JLabel jLabelRolePompier;
+    private javax.swing.JLabel jLabelSexePompier;
+    private javax.swing.JLabel jLabelTelPompier;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu2;
     private javax.swing.JMenu jMenu4;
